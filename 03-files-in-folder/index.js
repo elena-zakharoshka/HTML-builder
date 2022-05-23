@@ -9,7 +9,7 @@ fs.readdir('./03-files-in-folder/secret-folder', (err, files) => {
     fs.stat(path.join(__dirname, 'secret-folder', files[i]), (err, stats) => {
       fSize = stats.size;
       // console.log(fSize);
-      console.log(`${path.basename(files[i], path.extname(files[i]))}  -  ${path.extname(files[i]).substring(1)}  - ${fSize} kb`);
+      console.log(`${path.basename(files[i], path.extname(files[i]))}  -  ${path.extname(files[i]).substring(1)}  - ${fSize} b`);
     });
   }
 });
